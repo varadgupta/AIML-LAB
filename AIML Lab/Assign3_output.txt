@@ -1,0 +1,73 @@
+Enter number of nodes: 8
+Enter node 1 value: A
+Enter number of nodes connected to A: 3
+Enter connected node 1: B
+Enter connected node 2: C
+Enter connected node 3: D
+Enter node 2 value: B
+Enter number of nodes connected to B: 2
+Enter connected node 1: A
+Enter connected node 2: F
+Enter node 3 value: C
+Enter number of nodes connected to C: 3
+Enter connected node 1: A
+Enter connected node 2: E
+Enter connected node 3: F
+Enter node 4 value: D
+Enter number of nodes connected to D: 2
+Enter connected node 1: A
+Enter connected node 2: E
+Enter node 5 value: E
+Enter number of nodes connected to E: 3
+Enter connected node 1: D
+Enter connected node 2: C
+Enter connected node 3: G
+Enter node 6 value: F
+Enter number of nodes connected to F: 3
+Enter connected node 1: B
+Enter connected node 2: C
+Enter connected node 3: H
+Enter node 7 value: H
+Enter number of nodes connected to H: 2
+Enter connected node 1: F
+Enter connected node 2: G
+Enter node 8 value: G
+Enter number of nodes connected to G: 2
+Enter connected node 1: E
+Enter connected node 2: H
+
+Graph: {'A': ['B', 'C', 'D'], 'B': ['A', 'F'], 'C': ['A', 'E', 'F'], 'D': ['A', 'E'], 'E': ['D', 'C', 'G'], 'F': ['B', 'C', 'H'], 'H': ['F', 'G'], 'G': ['E', 'H']}
+
+----- Heuristic values -----
+Enter heuristic value for A =40
+Enter heuristic value for B =32
+Enter heuristic value for C =25
+Enter heuristic value for D =31
+Enter heuristic value for E =17
+Enter heuristic value for F =19
+Enter heuristic value for H =10
+Enter heuristic value for G =0
+
+Enter start node: A
+Enter goal node: G
+
+Open List:  ['A']
+Closed List:  ['A']
+Parent nodes:  {'B': 'A', 'C': 'A', 'D': 'A'}
+
+Open List:  ['B', 'C', 'D']
+Closed List:  ['A', 'C']
+Parent nodes:  {'B': 'A', 'C': 'A', 'D': 'A', 'E': 'C', 'F': 'C'}
+
+Open List:  ['B', 'D', 'E', 'F']
+Closed List:  ['A', 'C', 'E']
+Parent nodes:  {'B': 'A', 'C': 'A', 'D': 'A', 'E': 'C', 'F': 'C', 'G': 'E'}
+
+Open List:  ['B', 'D', 'F', 'G']
+Closed List:  ['A', 'C', 'E', 'G']
+Parent nodes:  {'B': 'A', 'C': 'A', 'D': 'A', 'E': 'C', 'F': 'C', 'G': 'E'}
+
+------Greedy Best First Search------
+
+Visited nodes: ['A', 'C', 'E', 'G']
+Path: ['A', 'C', 'E', 'G']
